@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import FetchData from './myComponent/fetch'
+import AllData from './myComponent/data'
+import IncreaseData from './myComponent/dataincrease'
+import MyComponent from './myComponent/pages/mycomponent';
+import Myroute from './myComponent/pages/myroute';
+import { BrowserRouter } from 'react-router-dom';
+import Func from './myComponent/func'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Func></Func>
+      {/* <BrowserRouter>
+        <MyComponent></MyComponent>
+        <Myroute></Myroute>
+      </BrowserRouter> */}
     </div>
   );
 }
